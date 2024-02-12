@@ -57,6 +57,7 @@ body {
 }
 
 .btn-custom {
-  background-color: #FF008D; 
-  color: #fff; 
-  border-color: #FF008D; 
+  background-color: rgb(255, 0, 141); 
+  color: rgb(255, 255, 255); 
+  border-color: rgb(255, 0, 141);
+}
