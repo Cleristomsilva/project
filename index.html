@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa do Tobias Pet Shop</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Adicionando o arquivo de estilos externo -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </head>
 
 <body>
+
 <!-- Barra de navegação -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 40px;">
     <div class="col-lg-4 col-md-3 col-sm-4">   
@@ -21,16 +23,16 @@
         </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6">
-        <img class="logo" class="img-fluid" src="./images/logo_sem_fundo.png" alt="" style="width: 15%;margin-left: 0%;">
+        <img class="logo" class="img-fluid" src="./images/logo_sem_fundo.png" alt="" style="width: 12%;margin-left: 0%;">
         <img class="fantasia" class="img-fluid" src="./images/nome_fantasia.png" alt="" style="width: 55%;margin-left: 3%;">
-        <p class="font-italic" style="color: rgb(251, 251, 251);width: 20%;margin-left: 3%;">PetShop</p>
+        <p class="font-italic" style="color: rgb(251, 251, 251);margin-left: 1%;">PetShop</p>
     </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-    <div class="collapse navbar-collapse" id="navbarNav" ">
+    <div class="collapse navbar-collapse" id="navbarNav" class="col-lg-4, col-md-3, col-sm-4">
         <ul class="navbar-nav ml-right">
-            <li class="nav-item">
+            <li class="nav-item;">
                 <a class="nav-link" href="https://api.whatsapp.com/send?phone=5521964063282&text=Ol%C3%A1%2C%20gostaria%20de%20de%20agendar%20um%20hor%C3%A1rio%20para%20meu%20Pet!" 
                 target="_blank">Agendar Banho e Tosa</a>
             </li>
@@ -42,8 +44,7 @@
     </div>
 </nav>
 
-
-<!-- Banner e Carrossel de fotos-->
+<!-- Banner e Carrossel -->
 <div class="container">
     <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-5" style="max-width: 50%;" >
@@ -56,6 +57,7 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <!-- Adicione mais indicadores conforme necessário -->
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -67,6 +69,7 @@
                     <div class="carousel-item">
                         <img src="./images/preto_branco.jpg" class="d-block w-100" alt="">
                     </div>
+                    <!-- Adicione mais itens do carrossel conforme necessário -->
                 </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -78,14 +81,17 @@
                     </a> 
             </div>
         </div>
+            <!-- Coluna do texto -->
         <div class="col-lg-4 col-md-8">
             <div class="text-left">
                 <h2>Seu melhor amigo merece todo amor e cuidado</h2>
-                <p> Oferecemos uma variedade de serviços e produtos para cuidar do bem-estar e da felicidade de seus pets.
-                    estamos aqui para garantir que seu pet receba os cuidados que merece. Nossa equipe dedicada e 
-                    apaixonada por animais está pronta para atendê-lo com carinho e profissionalismo, 
-                    proporcionando uma experiência única para você e seu companheiro.
-                </p>
+                <div class="text-justify">
+                    <p> Oferecemos uma variedade de serviços e produtos para cuidar do bem-estar e da felicidade de seus pets.
+                        estamos aqui para garantir que seu pet receba os cuidados que merece. Nossa equipe dedicada e 
+                        apaixonada por animais está pronta para atendê-lo com carinho e profissionalismo, 
+                        proporcionando uma experiência única para você e seu companheiro.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -93,45 +99,56 @@
   
 <div class="pt-5"></div>
   
+<!-- segunda scroll texto e fotos avulsas -->
 <div class="container">
     <div class="row">
         <div class="col-lg-4 col-md-8">
             <div class="text-left">
                 <h2>Seu pet se sentirá em casa, cercado de cuidado e atenção</h2>
-                <p>Proporcionamos um ambiente acolhedor e seguro para que seu 
-                animal de estimação desfrute de momentos felizes e tranquilos 
-                enquanto estiver conosco.Nossa equipe está sempre pronta para 
-                oferecer o melhor cuidado e atenção a cada pet que nos visita.</p>
+                <div class="text-justify">
+                    <p>Proporcionamos um ambiente acolhedor e seguro para que seu 
+                    animal de estimação desfrute de momentos felizes e tranquilos 
+                    enquanto estiver conosco.Nossa equipe está sempre pronta para 
+                    oferecer o melhor cuidado e atenção a cada pet que nos visita.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="col-lg-8 col-md-12 col-sm-10">
             <img src="./images/floquinho_dormindo.jpg" alt="" class="imagem1" style="max-width: 45%;">
             <img src="./images/cao_espuma_1.jpg" alt="" class="imagem1" style="max-width: 47%;">
         </div>
+        <!-- Adicione mais fotos conforme necessário -->
     </div>
 </div>
   
 <div class="pt-5"></div>
 
+<!-- terceiro scroll texto e fotos tax dog e hospedagem -->
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-12 col-sm-10">
-            <img src="./images/taxi_dog_junto.jpg" alt="" style="max-width: 43%;margin-right: 20px;">
-            <img src="./images/cachorro-dormindo.jpg" alt="" class="imagem1" style="max-width: 43%;"  >
+            <img src="/images/taxi_dog_junto.jpg" alt="" style="max-width: 43%;margin-right: 20px;">
+            <img src="/images/cachorro-dormindo.jpg" alt="" class="imagem1" style="max-width: 43%;"  >
         </div>
-        <div class="col-lg-4 col-md-8 col-sm-6>
+        <div class="col-lg-4 col-md-8 col-sm-6">
             <div class="text-left">
                 <p></p>
                 <h2>Comodidade para você e para o seu Pet</h2>
-                <p>Contamos com um serviço todo especial de transporte e hospedagem para seu Pet.
-                Podemos garantir que eles receberão o conforto e bem-estar que merecem.</p>
+                <div class="text-justify">
+                    <p>Contamos com um serviço todo especial de transporte e hospedagem para seu Pet.
+                    Podemos garantir que eles receberão o conforto e bem-estar que merecem.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+
 <div class="pt-5"></div>
 
+<!-- quarto scrol cursos e link ver mais -->
 <div class="container">
     <div class="row">
         <div class="col-md-5">
@@ -142,30 +159,35 @@
             </div>
         </div>
         <div class="col-lg-5 col-md-6 col-sm-8" >
-            <a href="./cursos/E-book-Alimentacao-natural-pet-para-iniciantes-atualizado.pdf" target="Alimentacao-natural">
-            <img src="./images/alimentacao_natural.jpg" alt="Itens à venda" class="img-fluid"  style="max-width: 30%;">
+            <a href="/cursos/E-book-Alimentacao-natural-pet-para-iniciantes-atualizado.pdf" target="Alimentacao-natural">
+                <img src="/images/alimentacao_natural.jpg" alt="" class="img-fluid"  style="max-width: 30%;">
             </a>
-            <a href="./cursos/Manual_de_Boas_Praticas.pdf" target="Boas-práticas">
-            <img src="./images/boas_praticas.jpg" alt="Itens à venda" class="img-fluid"  style="max-width: 30%;">
+        
+            <a href="/cursos/Manual_de_Boas_Praticas.pdf" target="Boas-práticas">
+            <img src="/images/boas_praticas.jpg" alt="" class="img-fluid"  style="max-width: 30%;">
             </a> 
-            <a href="./cursos/Guia-Gratuito-para-Adestramento-de-Cães.pdf" target="Adestramento-de-Cães">
-            <img src="./images/adestrar.jpg" alt="Itens à venda" class="img-fluid"  style="max-width: 30%;">
+            <a href="/cursos/Guia-Gratuito-para-Adestramento-de-Cães.pdf" target="Adestramento-de-Cães">
+            <img src="/images/adestrar.jpg" alt="" class="img-fluid"  style="max-width: 30%;">
             </a>
         </div>
         <div class="col-lg-2 col-md-1 col-sm-2">
-            <a href="https://www.baixelivros.com.br" target="_blank" class="btn btn-custom" style="margin-top: 50px;">Ver mais</a>
+            <a href="https://www.baixelivros.com.br" target="_blank" class="btn btn-custom" style="margin-top: 50px;">
+                Ver mais
+            </a>
         </div>
+    
     </div>
 </div>
-  
 <div class="pt-5"></div>
 
 <div class= "col-lg-12 col-md-6 col-sm-12" >
-    <img src="./images/banner_blue_hospedagem.jpeg" alt="" style="width: 35%;margin-left: 15%;margin-right: 1%;">
-    <img src="./images/banner_black_pet.jpeg" alt=""style="width: 35%;margin: auto;"">
+    <img src="./images/banner_blue_hospedagem.jpeg" alt="" style="width: 45%;margin-left: 5%;margin-right: 1%;">
+    <img src="./images/banner_black_pet.jpeg" alt=""style="width: 45%;margin: auto;"">
 </div>
 
+
 <div class="pt-5"></div>
+
 
 <!-- Depoimentos -->
 <div class="container">
@@ -204,17 +226,22 @@
 <!-- Endereço -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-4 col-md-4 offset-md-2">
-            <h2>Estamos localizados:</h2>
-            <div>
-                <a  href="https://www.google.com/maps/place/Pet+Shop+Casa+do+Tobias/@-22.430058,-42.9689233,15z/data=!4m6!3m5!1s0x99b3ac84150831:0x2b3ca7d035c81d37!8m2!3d-22.430058!4d-42.9689233!16s%2Fg%2F11s4nccr3j?entry=ttu" 
-                    target="_blank" style="color: rgb(8, 8, 8);">Rua Alberto de Oliveira, nº02 - Bairro da São Pedro, Teresópolis - RJ, 25956-010
-                </a>
+        <div class="col-md-10">
+            <div class ="row">
+                <div class="col-md-6 offset-md-1">
+                    <!-- Endereço -->
+                    <h2>Estamos localizados:</h2>
+                    <a  href="https://www.google.com/maps/place/Pet+Shop+Casa+do+Tobias/@-22.430058,-42.9689233,15z/data=!4m6!3m5!1s0x99b3ac84150831:0x2b3ca7d035c81d37!8m2!3d-22.430058!4d-42.9689233!16s%2Fg%2F11s4nccr3j?entry=ttu" 
+                        target="_blank" style="color: rgb(8, 8, 8);">Rua Alberto de Oliveira, nº02 - Bairro da São Pedro, Teresópolis - RJ, 25956-010
+                    </a>
+                </div>
+                <div class="col-md-2 offset-md-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1513.3837635561163!2d-42.9696128338245!3d-22.429707336032653!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99b3ac84150831%3A0x2b3ca7d035c81d37!2sPet%20Shop%20Casa%20do%20Tobias!5e0!3m2!1spt-BR!2sbr!4v1709377682196!5m2!1spt-BR!2sbr" width="380" height="300" style="border:0;" margin="auto" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </div>
 </div>
-  
 <div class="pt-5"></div>
 
 <!-- rodape -->
@@ -250,8 +277,8 @@
           <h6>Hospedagem: (21) 99749-8583</h6>
         </div>
     </div>
-  </div>
-</footer>
+    </div>
+  </footer>
 
 <script>
     function openWhatsApp() {
